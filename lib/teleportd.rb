@@ -1,8 +1,6 @@
 require 'curb'
-require 'open-uri'
 require 'hashie'
 require 'json'
-require 'awesome_print'
 
 module Teleportd
   END_POINT = 'http://api.teleportd.com/'.freeze
