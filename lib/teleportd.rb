@@ -26,7 +26,7 @@ module Teleportd
   end
 
   def search_location(lat, long, vertical_span = 1, horizontal_span = 1, page = 0)
-    query('search', "loc=[#{normalize_coords(lat)},#{normalize_coords(long)},#{vertical_span.to_f},#{horizontal_span.to_f}]&size=DEFAULT_FETCH_SIZE&from=#{page * 100}").hits
+    query('search', "loc=[#{normalize_coords(lat)},#{normalize_coords(long)},#{vertical_span.to_f},#{horizontal_span.to_f}]&size=#{DEFAULT_FETCH_SIZE}&from=#{page * 100}").hits
   end
 
   def details(sha)
