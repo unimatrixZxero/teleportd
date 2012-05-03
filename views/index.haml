@@ -1,0 +1,17 @@
+!!! 5
+%html
+  %head
+    %title 'Pictures from Berlin'
+    %link{href: 'http://twitter.github.com/bootstrap/assets/css/bootstrap.css', rel: 'stylesheet'}
+    %link{href: '/teleport.css', rel: 'stylesheet'}
+  %body
+    %nav
+      %a{href: "?page=#{@page - 1}", class: 'btn', disabled: (@page <= 0)}
+        %i{class: 'icon-step-backward'}
+
+      %a{href: "?page=#{@page + 1}", class: 'btn'}
+        %i{class: 'icon-camera'}
+        more
+        %i{class: 'icon-step-forward'}
+    .pictures
+      =haml :pics
