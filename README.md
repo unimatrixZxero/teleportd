@@ -12,8 +12,9 @@ Edit teleport_me.rb and put in you API-token/user_key
 
 
 Start the server with
+
     ruby -rubygems teleport_me.rb
 
 That should get you a working sintra app listening on
 
-http://localhost:4567
+[http://localhost:4567](http://localhost:4567)
