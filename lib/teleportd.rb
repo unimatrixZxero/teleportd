@@ -6,7 +6,7 @@ require 'awesome_print'
 
 module Teleportd
   END_POINT = 'http://api.teleportd.com/'.freeze
-  DEFAULT_FETCH_SIZE = 100.freeze
+  DEFAULT_FETCH_SIZE = 30.freeze
   class Config
     class << self
       attr_accessor :token
