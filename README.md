@@ -3,7 +3,6 @@ teleportd
 
 Just havin' fun playing around a bit with teleportd, and sinatra.
 
-
 Startup
 =======
 
@@ -15,4 +14,4 @@ Start the server with
 
 That should get you a working sintra app listening on
 
-http://localhost:9292
+[http://localhost:9292]
