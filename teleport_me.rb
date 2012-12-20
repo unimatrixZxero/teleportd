@@ -1,8 +1,7 @@
 require './lib/teleportd.rb'
 
 include Teleportd
-Teleportd::Config.token = 'YOURTOKENHERE'
-set :public_folder, File.dirname(__FILE__) + '/static'
+Teleportd::Config.token = YAML::load(File.open(File.join 'config', 'teleportd.yml'))['token']
 
 class TeleportdApp < Sinatra::Base
   set :public_folder, File.dirname(__FILE__) + '/static'
