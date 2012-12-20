@@ -3,5 +3,5 @@ require 'bundler'
 
 Bundler.require
 
-require './teleport_me.rb'
+require './teleportd.rb'
 run TeleportdApp
